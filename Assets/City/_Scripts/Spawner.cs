@@ -25,7 +25,7 @@ public class Spawner : MonoBehaviour {
 	{
 		if (Time.time > windowTime) {
 			windowTime = Time.time + timeForSpawn;
-			Instantiate (carro, gameObject.transform.position, Quaternion.identity);
+			Instantiate (carro, gameObject.transform.position, transform.rotation);
 		}
 	}
 }
